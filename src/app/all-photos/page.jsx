@@ -1,7 +1,7 @@
 import Card from '@/components/Card'
 import React from 'react';
 
-const page = async () => {
+const AllPhotos = async () => {
   const res = await fetch('https://pixgen-jet-mu.vercel.app/data.json');
   const photo = await res.json();
   return (
@@ -16,4 +16,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default AllPhotos;
